@@ -2199,3 +2199,23 @@ h1,
 	transform: scale(1.05);
 	/* Легке збільшення фото при наведенні */
 }
+
+@media (max-width: 480px) {
+
+	.button.special,
+	a[href*=".pdf"] {
+		width: 100% !important;
+		/* Розгортаємо на повну ширину */
+		min-width: auto !important;
+		margin: 0.5rem 0 !important;
+		/* Додаємо відступ зверху/знизу */
+		font-size: 0.9rem;
+		/* Трохи менший текст, щоб влізло */
+	}
+
+	#header nav ul {
+		flex-direction: column !important;
+		/* Кнопки в стовпчик на мобільному */
+		align-items: center;
+	}
+}
